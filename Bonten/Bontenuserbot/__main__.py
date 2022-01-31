@@ -1,12 +1,12 @@
 import sys
 
-import sefgs
-from sefgs import BOTLOG_CHATID, HEROKU_APP, PM_LOGGER_GROUP_ID
+import Bontenuserbot
+from Bontenuserbot import BOTLOG_CHATID, HEROKU_APP, PM_LOGGER_GROUP_ID
 
-from .Config import Config
-from .core.logger import logging
-from .core.session import Bontenub
-from .utils import (
+from Bonten.Config import Config
+from Bonten.core.logger import logging
+from Bonten.core.session import Bontenub
+from Bonten.utils import (
     add_bot_to_logger_group,
     ipchange,
     load_plugins,
@@ -51,7 +51,7 @@ async def startup_process():
     print("Yay your userbot is officially working.!!!")
     print(
         f"Congratulation, now type {cmdhr}alive to see message if Bontenub is live\
-        \nIf you need assistance, head to https://t.me/catuserbot_support"
+        \nIf you need assistance, head to https://t.me/komisupport"
     )
     print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
     await verifyLoggerGroup()
