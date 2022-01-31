@@ -21,18 +21,18 @@ from telethon.errors import (
 )
 
 from Bonten.Config import Config
-from Bonten.helpers.utils.events import checking
-from Bonten.helpers.utils.format import paste_message
-from Bonten.helpers.utils.utils import runcmd
-from Bonten.sql_helper.globals import gvarstatus
+from Bonten.Bontenuserbot.helpers.utils.events import checking
+from Bonten.Bontenuserbot.helpers.utils.format import paste_message
+from Bonten.Bontenuserbot.helpers.utils.utils import runcmd
+from Bonten.Bontenuserbot.sql_helper.globals import gvarstatus
 from Bonten import BOT_INFO, CMD_INFO, GRP_INFO, LOADED_CMDS, PLG_INFO
-from Bonten.cmdinfo import _format_about
-from Bonten.data import _sudousers_list, blacklist_chats_list, sudo_enabled_cmds
-from Bonten.events import *
-from Bonten.fasttelethon import download_file, upload_file
+from Bonten.Bontenuserbot.cmdinfo import _format_about
+from Bonten.Bontenuserbot.data import _sudousers_list, blacklist_chats_list, sudo_enabled_cmds
+from Bonten.Bontenuserbot.events import *
+from Bonten.Bontenuserbot.fasttelethon import download_file, upload_file
 from Bonten.logger import logging
-from Bonten.managers import edit_delete
-from Bonten.pluginManager import get_message_link, restart_script
+from Bonten.Bontenuserbot.managers import edit_delete
+from Bonten.Bontenuserbot.pluginManager import get_message_link, restart_script
 
 LOGS = logging.getLogger(__name__)
 
